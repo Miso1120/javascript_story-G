@@ -13,9 +13,13 @@
     const name = 'Alice'
     const age = 30
 
+    // const user = {
+    //   name: name,
+    //   age: age
+    // }
+
     const user = {
-      name: name,
-      age: age
+      name, age
     }
 
     // 2. 단축 메서드
@@ -51,7 +55,7 @@
       email: 'alice123@gmail.com'
     }
 
-    // const firstName = userInfo.name
+    // const firstName = userInfo.firstName
     // const userId = userInfo.userId
     // const email = userInfo.email
 
@@ -63,10 +67,10 @@
     console.log(firstName, userId, email)
 
     // 구조 분해 할당 활용 - 함수 매개변수
-    function printInfo({ name, age, city }) {
-      console.log(`이름: ${name}, 나이: ${age}, 도시: ${city}`)
+    function printInfo({ firstName, age, city }) {
+      console.log(`이름: ${firstName}, 나이: ${age}, 도시: ${city}`)
     }
-
+    printInfo(userInfo)
     const person = {
       name: 'Bob',
       age: 35,
